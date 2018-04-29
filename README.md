@@ -28,7 +28,7 @@ In this step was built an API to **integrate** `website` data field from **q2_cl
 
 In this final step we created an API to provide information from the entity for a client. The parameters used to capture information is `name` and `zip` code fields.
 
-## 4 - Prepare environment and run API´s (makefile)
+# Prepare environment and run API´s (makefile)
 
 To prepare the environment to run API it is necessary install some dependencies 
  ```
