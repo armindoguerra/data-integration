@@ -49,7 +49,7 @@ After create yawoen.db we run first API
 
 Lastly to make search about the companies information just run this commands bellow. It is necessary to set both parameters in file **requestApi2.py**.
 
-First we innitializate the API:
+First we initialize the API:
  ```
  $ python api2.py
  ```
