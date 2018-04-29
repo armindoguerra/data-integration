@@ -2,7 +2,7 @@
 
 This project is composed of three steps. In the first we create a databese from csv file. In the second part we create a RESTful API to verify if some new data have match with database just created. If yes, we updated the database with correspondent new datas. In the final part we create other API to response a specific search with specified parameters. Details about all steps follow bellow.
 
-O projeto foi desenvolvido em python with sqlite utilizando algumas configuração do framework Flask.
+The project was developed with python, Flask framework e sqlite database.
 
 ## 1 - Load company data in a database
 
