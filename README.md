@@ -21,7 +21,6 @@ The data source doesn't provide the id field, so we used the zip code fields to 
 In this final step we created an API to provide information from the entity for a client. The parameters used to capture information is `name` and `zip` code fields.
 
 The ouput example:
-
  ```
  {
  	"id": 12,
@@ -31,4 +30,26 @@ The ouput example:
  }
  ```
 
+## Prepare environment and run API´s
 
+To prepare the environment to run API it is necessary install some dependencies 
+ ```
+ $ pip install -r requirements.txt
+ ```
+
+Then just open a console and enter the command to create the database from the csv file. 
+ ```
+ $ python loadDb.py
+ ```
+
+After we run the first API with the command 
+ ```
+ $ python api.py
+ ```
+
+Lastly to make search about the companies information just run this command
+ ```
+ $ python api2.py
+ ```
+
+The search results can be viewed in a browser by the url http://127.0.0.1/
