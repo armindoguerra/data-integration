@@ -8,7 +8,7 @@ This project is composed of three steps.
 
 The project was developed with python, Flask framework e sqlite database.
 
-> To test the APIs it is mandatory to follow the order described above.
+***To test the APIs it is mandatory to follow the order described above.***
 
 ## 1 - Load company data in a database
 
@@ -28,7 +28,7 @@ In this step was built an API to **integrate** `website` data field from **q2_cl
 
 In this final step we created an API to provide information from the entity for a client. The parameters used to capture information is `name` and `zip` code fields.
 
-## Prepare environment and run API´s
+## 4 - Prepare environment and run API´s (makefile)
 
 To prepare the environment to run API it is necessary install some dependencies 
  ```
