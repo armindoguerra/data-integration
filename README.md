@@ -59,4 +59,4 @@ So, we are prepared to make queries:
  $ python requestApi2.py
  ```
 
-The second api are prepared to answer queries even when the inserted a piece of name the companies. The search results can be viewed in a browser by the url http://127.0.0.1:5000
+The second api are prepared to answer queries even when the inserted a piece of name the companies. 
