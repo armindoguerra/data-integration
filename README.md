@@ -52,4 +52,4 @@ Lastly to make search about the companies information just run this command
  $ python api2.py
  ```
 
-The search results can be viewed in a browser by the url http://127.0.0.1/
+The search results can be viewed in a browser by the url http://127.0.0.1:5000
