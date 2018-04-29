@@ -42,14 +42,21 @@ Then just open a console and enter the command to create the database from the c
  $ python loadDb.py
  ```
 
-After we run the first API with the command 
+After create yawoen.db we run first API 
  ```
  $ python api.py
  ```
 
-Lastly to make search about the companies information just run this command
+Lastly to make search about the companies information just run this commands bellow. It is necessary to set both parameters in file **requestApi2.py**.
+
+First we innitializate the API:
  ```
  $ python api2.py
  ```
 
-The search results can be viewed in a browser by the url http://127.0.0.1:5000
+So, we are prepared to make queries:
+ ```
+ $ python requestApi2.py
+ ```
+
+The second api are prepared to answer queries even when the inserted a piece of name the companies. The search results can be viewed in a browser by the url http://127.0.0.1:5000
