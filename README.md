@@ -52,12 +52,7 @@ First we initialize the API:
  $ python api2.py
  ```
 
-So, we are prepared to make queries:
- ```
- $ python requestApi2.py
- ```
-
-The output should have this form:
+So, we are prepared to make queries. The output should have this form:
  ```
  {
  	"id": 12,

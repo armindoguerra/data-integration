@@ -1,5 +1,5 @@
 import csv, sqlite3
-import pandas, jsonify
+import pandas
 
 
 # Creating database yawoen.db e table companies
