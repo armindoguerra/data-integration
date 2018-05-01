@@ -5,11 +5,11 @@ import json
 import sys
 
 class TestFlaskApi(unittest.TestCase):
-	def test_hello_world(self):
+	def test_one(self):
 		response = requests.get('http://localhost:5000')
 		self.assertEqual(response.json(), {'OK': 'yawoen.db is Updated!'})
 	
-	def test_hello(self):
+	def test_two(self):
 		name = 'aircraft'
 		addresszip = 60046
 		api_url = 'http://127.0.0.1:5000/queries'
