@@ -26,7 +26,7 @@ In this step was built an API to **integrate** `website` data field from **q2_cl
 
 ## 3 - Matching API to get data based on specified parameters
 
-In this final step we created an API to provide information from the entity for a client. The parameters used to capture information is `name` and `zip` code fields.
+In this final step we created an API to provide information from the entity for a client. The parameters used to capture information is `name` and `zip` code fields. The code to this also is in **api.py**.
 
 # Prepare environment and run API´s (makefile)
 
@@ -40,19 +40,14 @@ Then just open a console and enter the command to create the database from the c
  $ python loadDb.py
  ```
 
-After create yawoen.db we run first API 
+To run the API type this command:
  ```
  $ python api.py
  ```
 
-Lastly to make search about the companies information just run this commands bellow. It is necessary to set both parameters in file **requestApi2.py**.
+So, the datas are updated and it is possible to make requests to capture informations about the companies. The api is prepared to answer queries even when the inserted a piece of name the companies. In requests it is necessary send two parameter, `name` and `zip code` and the url is http://127.0.0.1:5000/queries.
 
-First we initialize the API:
- ```
- $ python api2.py
- ```
-
-So, we are prepared to make queries. The output should have this form:
+The output should have this form:
  ```
  {
  	"id": 12,
@@ -62,5 +57,7 @@ So, we are prepared to make queries. The output should have this form:
  }
  ```
 
-
-The second api are prepared to answer queries even when the inserted a piece of name the companies. 
+The tests to code are in **test_api.py**. With api running, just run:
+ ```
+ $ python test_api.py
+ ```
