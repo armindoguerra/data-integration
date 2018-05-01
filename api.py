@@ -7,7 +7,7 @@ import flask
 app = flask.Flask(__name__) # Innit FLask
 app.config["DEBUG"] = False # Activetion debug
 
-# Route to Integrate filed website to yawoen.db
+# Integrate filed website to yawoen.db
 @app.route('/', methods=['GET'])
 def api():
 	conn = sqlite3.connect('yawoen.db')
@@ -30,7 +30,7 @@ def api():
 
 	return jsonify({'OK': 'yawoen.db is Updated!'})
 
-# Route to Integrate filed website to yawoen.db
+# Make queries about companies
 @app.route('/queries', methods=['POST'])
 def api2():
 
