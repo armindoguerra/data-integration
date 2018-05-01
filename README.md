@@ -8,7 +8,7 @@ This project is composed of three steps.
 
 The project was developed with python, Flask framework e sqlite database.
 
-***To test the APIs it is mandatory to follow the order described above.***
+***To test the APIs it is mandatory to follow the order described bellow.***
 
 ## 1 - Load company data in a database
 
