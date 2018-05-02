@@ -34,7 +34,7 @@ def api():
 @app.route('/queries', methods=['POST'])
 def api2():
 
-	# Revieving the parameters
+	# Receiving the parameters
 	name = request.form['name']
 	addresszip = request.form['addresszip']
 
