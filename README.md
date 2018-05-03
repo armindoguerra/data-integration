@@ -31,11 +31,11 @@ In this final step we created an API to provide information from the entity for 
 # Prepare environment and run API´s (makefile)
 
 To prepare the environment to run API it is necessary install some dependencies 
- ```
- $ pip install -r requirements.txt
- ```
+```
+$ pip install -r requirements.txt
+```
 
-Then just open a console and enter the command to create the database from the csv file. 
+It´s necessary to set path to **q1_catalog.csv** and **q2_clientData.csv**. In this example the files and API software are in the same directory. Then just open a console and enter the command to create the database from the csv file. 
  ```
  $ python loadDb.py
  ```
@@ -45,11 +45,27 @@ To run the API type this command:
  $ python api.py
  ```
 
-So, the datas are updated and it is possible to make requests to capture informations about the companies. The api is prepared to answer queries even when the inserted a piece of name of the companies. In requests it is necessary send two parameter, `name` and `zip code` and the url must be http://127.0.0.1:5000/queries.
+So, the datas are updated and it is possible to verify the field `website` together with the other fields. In requests use http://127.0.0.1:5000/. With api running, just execute:
+```
+>>> from requests import get
+>>> get('http://localhost:5000/).json()
+```
+
+To testing to the field `website` was in situThe output should have this form:
+```
+{
+  "id": "1", 
+  "name": "tola sales group", 
+  "website": "http://repsources.com", 
+  "zip": "78229"
+}
+```
+
+The api is prepared to answer queries even when the inserted a piece of name of the companies. In requests it is necessary send two parameter, `name` and `zip code` and the url must be http://127.0.0.1:5000/queries.
 
 The tests to code are in **test_api.py**. 
 
-With api running, just run:
+With api running, just execute:
 
 ```
 >>> from requests import post
