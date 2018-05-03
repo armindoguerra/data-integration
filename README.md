@@ -53,7 +53,7 @@ $ python test_api.py
 ```
  
 ```
->>> from requests import put, get
+>>> from requests import post
 >>> post('http://localhost:5000/queries', data={'name': 'aircraft', 'addresszip': 60046 }).json()
 ```
 
