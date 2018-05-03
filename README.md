@@ -47,11 +47,10 @@ To run the API type this command:
 
 So, the datas are updated and it is possible to make requests to capture informations about the companies. The api is prepared to answer queries even when the inserted a piece of name of the companies. In requests it is necessary send two parameter, `name` and `zip code` and the url must be http://127.0.0.1:5000/queries.
 
-The tests to code are in **test_api.py**. With api running, just run:
-```
-$ python test_api.py
-```
- 
+The tests to code are in **test_api.py**. 
+
+With api running, just run:
+
 ```
 >>> from requests import post
 >>> post('http://localhost:5000/queries', data={'name': 'aircraft', 'addresszip': 60046 }).json()
