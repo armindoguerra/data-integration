@@ -7,8 +7,8 @@ import sys
 class TestFlaskApi(unittest.TestCase):
 	def test_one(self):
 		response = requests.get('http://localhost:5000')
-		self.assertEqual(response.json(), {'OK': 'yawoen.db is Updated!'})
-	
+		self.assertEqual(response.json(), {"id": "1", "name": "tola sales group", "website": "http://repsources.com","zip": "78229"})
+
 	def test_two(self):
 		name = 'aircraft'
 		addresszip = 60046
