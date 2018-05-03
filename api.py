@@ -25,10 +25,13 @@ def api():
 	[cur.execute("UPDATE companies SET website =   ?  WHERE id =   ?;", (dfwebsiteId.website_y.loc[x], x)) for x in dfwebsiteId.index]
 	r = cur.execute('SELECT * FROM companies;').fetchall()
 
+	# Return firt item of the list with website field updated
+	json1 = {'id': str(r[0][0]),'name':str(r[0][1]),'zip':str(r[0][2]),'website':str(r[0][3])}
+
 	conn.commit()
 	conn.close()
 
-	return jsonify({'OK': 'yawoen.db is Updated!'})
+	return jsonify(json1)
 
 # Make queries about companies
 @app.route('/queries', methods=['POST'])
@@ -45,9 +48,10 @@ def api2():
 	# The logic operator AND was used
 	b = cur.execute("SELECT * FROM companies  WHERE name like '%{a}%' and addresszip = {b};".format(a=name,b=addresszip)).fetchall()
 	b = pandas.DataFrame(b)
-	json = {'id': str(b[0][0]),'name':str(b[1][0]),'zip':str(b[2][0]),'website':str(b[3][0])}
+	json2 = {'id': str(b[0][0]),'name':str(b[1][0]),'zip':str(b[2][0]),'website':str(b[3][0])}
 
-	return jsonify(json)
-	 
+	return jsonify(json2)
+
 if __name__ == "__main__":
     app.run(debug=True)
+
