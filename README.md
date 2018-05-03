@@ -45,13 +45,12 @@ To run the API type this command:
  $ python api.py
  ```
 
-So, the datas are updated and it is possible to verify the field `website` together with the other fields. In requests use http://127.0.0.1:5000/. With api running, just execute:
+So, the datas are updated and it is possible to verify the field `website` together with the other fields. In requests use url:  http://127.0.0.1:5000/. With api running, just execute:
 ```
 >>> from requests import get
 >>> get('http://localhost:5000/).json()
 ```
-
-To testing to the field `website` was in situThe output should have this form:
+The output should have this form:
 ```
 {
   "id": "1", 
